@@ -24,7 +24,7 @@ class Heightmap() {
 
             version >= SupportedVersion.MC_1_16 -> {
                 if(compactVersion.size != 37) { // 16x16
-                    throw AnvilException("Wrong length for 1.16 compacted heightmap (found ${compactVersion.size}, expected 37)")
+                    //throw AnvilException("Wrong length for 1.16 compacted heightmap (found ${compactVersion.size}, expected 37)")
                 }
                 heights = unpack(compactVersion, 9)
             }
